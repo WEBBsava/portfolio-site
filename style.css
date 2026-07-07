@@ -1,0 +1,17 @@
+:root {
+    --forest-green: #2E6F40;
+}
+
+.nav-bar {
+    background-color: var(--forest-green);
+    color: white;
+    padding: 1.5rem;
+}
+
+.project-card {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--forest-green);
+}
