@@ -1,17 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savannah Bliven - Coming Soon</title>
+
+    <title>Savannah Bliven</title>
+
+    <meta name="author" content="Savannah Bliven">
+    <meta name="description" content="Portfolio website of Savannah Bliven showing projects, skills, and contact info.">
+
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gray-50 text-gray-900">
-    <div class="container">
-        <h1 class="text-xl font-semibold">Under Construction</h1>
-        <p>Nothing here yet, check back later!</p>
-    </div>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Savannah Bliven</div>
+            <ul class="nav-links">
+                <li><a href="#about">Who I Am</a></li>
+                <li><a href="#skills">What I do</a></li>
+                <li><a href="#projects">Things I've Built</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>  
+    </header>
+
+    <!-- SECTION: About -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I'm studying <strong>Integrative Organismal Biology</strong> and <strong>Software Engineering</strong>,
+            two fields I combine to explore how technology can enhance animal care, conservation, and research. My 
+            passion lies in creating software solutions that improve the lives of animals and their caregivers.</p>
+    </section>
+
+    <!-- SECTION: Skills & Hobbies -->
+    <section id="skills" class="skills-section">
+        <h2>What I Do and Enjoy</h2>
+        <div class="skills-content">
+            
+            <!-- SUBSECTION: Skills -->
+            <div class="skill-card">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Languages: Java, Python, C/C++, HTML/CSS/JS</li>
+                    <li>Frameworks: JavaFX, Flask</li>
+                    <li>Tools: Git, GitHub, Gradle, JUnit, PyTest</li>
+                    <li>Soft Skills: Problem-Solving, Time Management, Adaptability</li>
+                </ul>
+            </div>
+
+            <!-- SUBSECTION: Hobbies -->
+            <div class="skill-card">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Houseplant Care</li>
+                    <li>Gaming</li>
+                    <li>Photography</li>
+                    <li>Animal Care and Volunteering</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: Projects -->
+    <section id="projects" class="projects-section">
+        <h2>Things I've Built</h2>
+
+        <!-- SUBSECTION: Coursework (Group) Projects -->
+        <div class="project-category">
+            <h3>Group Coursework</h3>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h4>Acquire (Group Project)</h4>
+                    <span class="status">Completed April 2022 - group coursework project (private)</span>
+                </div>
+                <p>An original rendition of the board game <em>Acquire</em>, built for CS2263. Implemented core gameplay mechanics including stock management, tile placement, and mergers. 
+                Practiced teamwork, Git/Gradle workflows, and design patterns under time constraints.</p>
+            </div>
+        </div>
+
+        <!-- SUBSECTION: Coursework Projects -->
+        <div class="project-category">
+            <h3>Coursework Projects</h3>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h4>Mathematical Expression Evaluator</h4>
+                    <span class="status">Completed February 2022 — coursework project (private)</span>
+                </div>
+                <p>A simple evaluator created for CS2263 (Advanced OOP). Designed to ignore order of operations and practice Git, GitHub, Gitflow, and Gradle.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h4>Course Information UI</h4>
+                    <span class="status">Completed February 2022 — coursework project (private)</span>
+                </div>
+                <p>A JavaFX application for CS2263 that organizes course data across six departments. Focused on user interface and object-oriented design principles.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h4>OSINT Recon Reports</h4>
+                    <span class="status">Completed Spring 2025 — academic project (private)</span>
+                </div>
+                <p>Assignments from CS4417 (Cybersecurity Threat Intelligence). Used SpiderFoot and theHarvester to perform passive data collection and analysis, with findings compiled into structured reports.</p>
+            </div>
+        </div>
+
+        <!-- SUBSECTION: Independent Projects -->
+        <div class="project-category">
+            <h3>Independent Projects</h3>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h4>Wildlife Tracking Dashboard</h4>
+                    <span class="status">In progress, last updated June 2025 — independent project (private)</span>
+                </div>
+                <p>An interactive dashboard for visualizing real-world GPS animal data. Built with Python and Leaflet to support wildlife research and conservation monitoring.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h4>Plantipedia</h4>
+                    <span class="status">In progress, last updated July 2025 — independent project (private)</span>
+                </div>
+                <p>A houseplant encyclopedia website (static site with HTML/CSS/JS). Includes a searchable database and plans for user contributions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: Publications -->
+    <section id="publications" class="publications-section">
+        <h2>Publications</h2>
+
+        <div class="project-card">
+            <div class="project-header">
+                <div>
+                    <h4>Isolation and genome annotation of Rowlf, a novel cluster EG bacteriophage with a purple acid phosphatase-like gene</h4>
+                    <span class="status">Published in the Journal of Microbiology, July 2025 (published under previous name)</span>
+                </div>
+                <a class="btn btn--primary btn--small" href="https://journals.asm.org/doi/10.1128/mra.00314-25" target="_blank">Read Publication</a>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <div class="project-header">
+                <div>
+                    <h4>The recumbirostran <em>Hapsidopareion lepton</em> from the early Permian (Cisuralian: Artinskian) of Oklahoma reassessed using HR&mu;CT, and the placement of Recumbirostra on the amniote stem</h4>
+                    <span class="status">Published in the Journal of Paleontology, 2025 (published under previous name)</span>
+                </div>
+                <a class="btn btn--primary btn--small" href="https://onlinelibrary.wiley.com/doi/10.1002/spp2.1610" target="_blank" rel="noopener">Read Publication</a>
+            </div>
+        </div>
+    </section>  
+
+    <!-- SECTION: Contact -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="btn-row">
+            <a class="btn btn--primary" href="mailto:webbsav2@isu.edu">Email Me</a>
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/savannah-b-1504391bb/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn--primary" href="https://github.com/WEBBsava" target="_blank" rel="noopener">School GitHub</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Savannah B.</p>
+    </footer>
+
 </body>
 </html>
