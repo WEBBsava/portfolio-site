@@ -1,11 +1,77 @@
+/* ---------- COLOR PALETTE ---------- */
 :root {
+    --bg-dark: #1E1E1E;
+    --bg-surface: #2D2D2D;
+    --accent-primary: #2E7D32;
+    --accent-secondary: #C2B280;
+    --text-light: #ddd6ce;
+    --text-muted: #B0B0B0;
+    --highlight: #81C784;
+
     --forest-green: #2E6F40;
 }
+/* ---------- END COLOR PALETTE ---------- */
+
+
+/* ---------- GLOBAL STYLES ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+/* ---------- END GLOBAL STYLES ---------- */
+
+
+/* ---------- HEADER & NAVIGATION ---------- */
+
+/* ---------- END HEADER & NAVIGATION ---------- */
+
+
+/* ---------- SECTIONS ---------- */
+
+/* ---------- END SECTIONS ---------- */
+
+
+/* ----------  ---------- */
+
+/* ---------- END  ---------- */
+
+/* ----------  ---------- */
+
+/* ---------- END  ---------- */
+
 
 .nav-bar {
     background-color: var(--forest-green);
     color: white;
     padding: 1.5rem;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-card {
