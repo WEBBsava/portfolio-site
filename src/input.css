@@ -6,3 +6,15 @@
   --color-brand-primary: #2E7D32;
   --color-brand-highlight: #81C784;
 }
+
+@utility portfolio-section {
+  @apply p-6 max-w-[850px] mx-auto my-4 bg-brand-surface rounded-md shadow-md;
+}
+
+@utility portfolio-card {
+  @apply bg-white/5 border border-white/15 border-l-4 border-l-brand-primary p-4 mb-4 rounded-md shadow-md hover:-translate-y-1 hover:bg-white/[0.08] transition duration-300;
+}
+
+@utility portfolio-btn {
+  @apply inline-flex items-center justify-center gap-1.5 px-4 py-2 text-sm font-semibold rounded-md bg-brand-primary text-white border-b-4 border-brand-primary hover:-translate-y-0.5 hover:bg-[#256a29] transition shadow-md;
+}
