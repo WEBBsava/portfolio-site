@@ -11,123 +11,129 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-brand-dark text-[#ddd6ce] font-serif leading-relaxed antialiased">
+<body class="bg-brand-light text-[#ddd6ce] font-serif leading-relaxed antialiased relative">
 
-    <header class="sticky top-0 z-50 bg-[#333]/90 backdrop-blur-md shadow-md border-b-4 border-brand-primary">
-        <nav class="max-w-[850px] mx-auto flex justify-between items-center py-3 px-6">
-            <div class="text-xl font-bold text-brand-primary tracking-wide">Savannah Bliven</div>
-            <ul class="flex gap-6 list-none text-sm font-medium">
-                <li><a href="#about" class="text-[#ddd6ce] hover:text-[#C2B280] transition-colors">Who I Am</a></li>
-                <li><a href="#skills" class="text-[#ddd6ce] hover:text-[#C2B280] transition-colors">What I do</a></li>
-                <li><a href="#projects" class="text-[#ddd6ce] hover:text-[#C2B280] transition-colors">Things I've Built</a></li>
-                <li><a href="#publications" class="text-[#ddd6ce] hover:text-[#C2B280] transition-colors">Publications</a></li>
-                <li><a href="#contact" class="text-[#ddd6ce] hover:text-[#C2B280] transition-colors">Contact</a></li>
-            </ul>
-        </nav>  
-    </header>
+    <canvas id="plant-canvas" class="fixed inset-0 pointer-events-none z-0 w-full h-full"></canvas>
 
-    <section id="about" class="portfolio-section mt-6">
-        <h2 class="text-brand-primary mb-3 border-b-2 border-brand-highlight pb-1 text-2xl font-bold">About Me</h2>
-        <p class="text-sm text-[#ddd6ce]">I'm studying <strong>Integrative Organismal Biology</strong> and <strong>Software Engineering</strong>, two fields I combine to explore how technology can enhance animal care, conservation, and research. My passion lies in creating software solutions that improve the lives of animals and their caregivers.</p>
-    </section>
-
-    <section id="skills" class="portfolio-section">
-        <h2 class="text-brand-primary mb-4 border-b-2 border-brand-highlight pb-1 text-2xl font-bold">What I Do and Enjoy</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            <div class="bg-white/5 border-t-4 border-brand-primary p-5 rounded-md shadow-md hover:-translate-y-1 hover:bg-white/10 transition duration-300">
-                <h3 class="mb-3 text-lg font-bold text-[#C2B280]">Skills</h3>
-                <ul class="list-none p-0 space-y-2 text-sm">
-                    <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Languages: Java, Python, C/C++, HTML/CSS/JS</li>
-                    <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Frameworks: JavaFX, Flask</li>
-                    <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Tools: Git, GitHub, Gradle, JUnit, PyTest</li>
-                    <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Soft Skills: Problem-Solving, Time Management, Adaptability</li>
+    <div class="relative z-10">
+        <header class="sticky top-0 z-50 bg-[#333]/90 backdrop-blur-md shadow-md border-b-4 border-brand-primary">
+            <nav class="max-w-[850px] mx-auto flex justify-between items-center py-3 px-6">
+                <div class="text-xl font-bold text-brand-primary tracking-wide">Savannah Bliven</div>
+                <ul class="flex gap-6 list-none text-sm font-medium">
+                    <li><a href="#about" class="text-[#ddd6ce] hover:text-[#C2B280] transition-colors">Who I Am</a></li>
+                    <li><a href="#skills" class="text-[#ddd6ce] hover:text-[#C2B280] transition-colors">What I do</a></li>
+                    <li><a href="#projects" class="text-[#ddd6ce] hover:text-[#C2B280] transition-colors">Things I've Built</a></li>
+                    <li><a href="#publications" class="text-[#ddd6ce] hover:text-[#C2B280] transition-colors">Publications</a></li>
+                    <li><a href="#contact" class="text-[#ddd6ce] hover:text-[#C2B280] transition-colors">Contact</a></li>
                 </ul>
-            </div>
+            </nav>  
+        </header>
 
-            <div class="bg-white/5 border-t-4 border-brand-primary p-5 rounded-md shadow-md hover:-translate-y-1 hover:bg-white/10 transition duration-300">
-                <h3 class="mb-3 text-lg font-bold text-[#C2B280]">Hobbies</h3>
-                <ul class="list-none p-0 space-y-2 text-sm">
-                    <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Houseplant Care</li>
-                    <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Gaming</li>
-                    <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Photography</li>
-                    <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Animal Care and Volunteering</li>
-                </ul>
-            </div>
+        <section id="about" class="portfolio-section mt-6">
+            <h2 class="text-brand-primary mb-3 border-b-2 border-brand-highlight pb-1 text-2xl font-bold">About Me</h2>
+            <p class="text-sm text-[#ddd6ce]">I'm studying <strong>Integrative Organismal Biology</strong> and <strong>Software Engineering</strong>, two fields I combine to explore how technology can enhance animal care, conservation, and research. My passion lies in creating software solutions that improve the lives of animals and their caregivers.</p>
+        </section>
 
-        </div>
-    </section>
-
-    <section id="projects" class="portfolio-section">
-        <h2 class="text-brand-primary mb-4 border-b-2 border-brand-highlight pb-1 text-2xl font-bold">Things I've Built</h2>
-
-        <div class="space-y-6">
-            <div>
-                <h3 class="text-[#C2B280] text-lg font-semibold mb-3 border-l-4 border-brand-primary pl-2">Group Coursework</h3>
-                <div class="portfolio-card">
-                    <div class="flex flex-col sm:flex-row justify-between items-baseline mb-1">
-                        <h4 class="text-base font-bold text-white">Acquire (Group Project)</h4>
-                        <span class="text-xs text-[#B0B0B0] italic">Completed April 2022 — private coursework</span>
-                    </div>
-                    <p class="text-sm text-[#ddd6ce]">An original rendition of the board game <em>Acquire</em>, built for CS2263. Implemented core gameplay mechanics including stock management, tile placement, and mergers.</p>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-[#C2B280] text-lg font-semibold mb-3 border-l-4 border-brand-primary pl-2">Independent Projects</h3>
-                <div class="portfolio-card">
-                    <div class="flex flex-col sm:flex-row justify-between items-baseline mb-1">
-                        <h4 class="text-base font-bold text-white">Wildlife Tracking Dashboard</h4>
-                        <span class="text-xs text-[#B0B0B0] italic">In progress, June 2025</span>
-                    </div>
-                    <p class="text-sm text-[#ddd6ce]">An interactive dashboard for visualizing real-world GPS animal data. Built with Python and Leaflet to support wildlife conservation monitoring.</p>
+        <section id="skills" class="portfolio-section">
+            <h2 class="text-brand-primary mb-4 border-b-2 border-brand-highlight pb-1 text-2xl font-bold">What I Do and Enjoy</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="bg-white/5 border-t-4 border-brand-primary p-5 rounded-md shadow-md hover:-translate-y-1 hover:bg-white/10 transition duration-300">
+                    <h3 class="mb-3 text-lg font-bold text-[#C2B280]">Skills</h3>
+                    <ul class="list-none p-0 space-y-2 text-sm">
+                        <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Languages: Java, Python, C/C++, HTML/CSS/JS</li>
+                        <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Frameworks: JavaFX, Flask</li>
+                        <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Tools: Git, GitHub, Gradle, JUnit, PyTest</li>
+                        <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Soft Skills: Problem-Solving, Time Management, Adaptability</li>
+                    </ul>
                 </div>
 
-                <div class="portfolio-card">
-                    <div class="flex flex-col sm:flex-row justify-between items-baseline mb-1">
-                        <h4 class="text-base font-bold text-white">Plantipedia</h4>
-                        <span class="text-xs text-[#B0B0B0] italic">In progress, July 2025</span>
-                    </div>
-                    <p class="text-sm text-[#ddd6ce]">A houseplant encyclopedia website with a searchable database and structured plans for user contributions.</p>
+                <div class="bg-white/5 border-t-4 border-brand-primary p-5 rounded-md shadow-md hover:-translate-y-1 hover:bg-white/10 transition duration-300">
+                    <h3 class="mb-3 text-lg font-bold text-[#C2B280]">Hobbies</h3>
+                    <ul class="list-none p-0 space-y-2 text-sm">
+                        <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Houseplant Care</li>
+                        <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Gaming</li>
+                        <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Photography</li>
+                        <li class="pl-4 relative before:content-['▹'] before:absolute before:left-0 before:text-brand-primary before:font-bold">Animal Care and Volunteering</li>
+                    </ul>
                 </div>
+
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="publications" class="portfolio-section">
-        <h2 class="text-brand-primary mb-4 border-b-2 border-brand-highlight pb-1 text-2xl font-bold">Publications</h2>
+        <section id="projects" class="portfolio-section">
+            <h2 class="text-brand-primary mb-4 border-b-2 border-brand-highlight pb-1 text-2xl font-bold">Things I've Built</h2>
 
-        <div class="space-y-4">
-            <div class="portfolio-card flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <div class="space-y-6">
                 <div>
-                    <h4 class="text-sm font-bold text-white mb-1">Isolation and genome annotation of Rowlf, a novel cluster EG bacteriophage with a purple acid phosphatase-like gene</h4>
-                    <span class="text-xs text-[#B0B0B0] italic">Journal of Microbiology, July 2025</span>
+                    <h3 class="text-[#C2B280] text-lg font-semibold mb-3 border-l-4 border-brand-primary pl-2">Group Coursework</h3>
+                    <div class="portfolio-card">
+                        <div class="flex flex-col sm:flex-row justify-between items-baseline mb-1">
+                            <h4 class="text-base font-bold text-white">Acquire (Group Project)</h4>
+                            <span class="text-xs text-[#B0B0B0] italic">Completed April 2022 — private coursework</span>
+                        </div>
+                        <p class="text-sm text-[#ddd6ce]">An original rendition of the board game <em>Acquire</em>, built for CS2263. Implemented core gameplay mechanics including stock management, tile placement, and mergers.</p>
+                    </div>
                 </div>
-                <a class="portfolio-btn shrink-0" href="https://journals.asm.org/doi/10.1128/mra.00314-25" target="_blank" rel="noopener">Read Paper</a>
-            </div>
-            
-            <div class="portfolio-card flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+
                 <div>
-                    <h4 class="text-sm font-bold text-white mb-1">The recumbirostran <em>Hapsidopareion lepton</em> from the early Permian of Oklahoma reassessed using HR&mu;CT...</h4>
-                    <span class="text-xs text-[#B0B0B0] italic">Journal of Paleontology, 2025</span>
+                    <h3 class="text-[#C2B280] text-lg font-semibold mb-3 border-l-4 border-brand-primary pl-2">Independent Projects</h3>
+                    <div class="portfolio-card">
+                        <div class="flex flex-col sm:flex-row justify-between items-baseline mb-1">
+                            <h4 class="text-base font-bold text-white">Wildlife Tracking Dashboard</h4>
+                            <span class="text-xs text-[#B0B0B0] italic">In progress, June 2025</span>
+                        </div>
+                        <p class="text-sm text-[#ddd6ce]">An interactive dashboard for visualizing real-world GPS animal data. Built with Python and Leaflet to support wildlife conservation monitoring.</p>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="flex flex-col sm:flex-row justify-between items-baseline mb-1">
+                            <h4 class="text-base font-bold text-white">Plantipedia</h4>
+                            <span class="text-xs text-[#B0B0B0] italic">In progress, July 2025</span>
+                        </div>
+                        <p class="text-sm text-[#ddd6ce]">A houseplant encyclopedia website with a searchable database and structured plans for user contributions.</p>
+                    </div>
                 </div>
-                <a class="portfolio-btn shrink-0" href="https://onlinelibrary.wiley.com/doi/10.1002/spp2.1610" target="_blank" rel="noopener">Read Paper</a>
             </div>
-        </div>
-    </section>  
+        </section>
 
-    <section id="contact" class="portfolio-section text-center">
-        <h2 class="text-brand-primary mb-4 border-b-2 border-brand-highlight pb-1 text-2xl font-bold">Contact Me</h2>
-        <div class="flex flex-wrap justify-center gap-3">
-            <a class="portfolio-btn" href="mailto:webbsav2@isu.edu">Email Me</a>
-            <a class="portfolio-btn" href="https://www.linkedin.com/in/savannah-b-1504391bb/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="portfolio-btn" href="https://github.com/WEBBsava" target="_blank" rel="noopener">School GitHub</a>
-        </div>
-    </section>
+        <section id="publications" class="portfolio-section">
+            <h2 class="text-brand-primary mb-4 border-b-2 border-brand-highlight pb-1 text-2xl font-bold">Publications</h2>
 
-    <footer class="bg-brand-surface text-[#B0B0B0] text-center py-4 text-xs max-w-[850px] mx-auto rounded-b-md mb-6">
-        <p>&copy; 2026 Savannah B.</p>
-    </footer>
+            <div class="space-y-4">
+                <div class="portfolio-card flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div>
+                        <h4 class="text-sm font-bold text-white mb-1">Isolation and genome annotation of Rowlf, a novel cluster EG bacteriophage with a purple acid phosphatase-like gene</h4>
+                        <span class="text-xs text-[#B0B0B0] italic">Journal of Microbiology, July 2025</span>
+                    </div>
+                    <a class="portfolio-btn shrink-0" href="https://journals.asm.org/doi/10.1128/mra.00314-25" target="_blank" rel="noopener">Read Paper</a>
+                </div>
+                
+                <div class="portfolio-card flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div>
+                        <h4 class="text-sm font-bold text-white mb-1">The recumbirostran <em>Hapsidopareion lepton</em> from the early Permian of Oklahoma reassessed using HR&mu;CT...</h4>
+                        <span class="text-xs text-[#B0B0B0] italic">Journal of Paleontology, 2025</span>
+                    </div>
+                    <a class="portfolio-btn shrink-0" href="https://onlinelibrary.wiley.com/doi/10.1002/spp2.1610" target="_blank" rel="noopener">Read Paper</a>
+                </div>
+            </div>
+        </section>  
 
+        <section id="contact" class="portfolio-section text-center">
+            <h2 class="text-brand-primary mb-4 border-b-2 border-brand-highlight pb-1 text-2xl font-bold">Contact Me</h2>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a class="portfolio-btn" href="mailto:webbsav2@isu.edu">Email Me</a>
+                <a class="portfolio-btn" href="https://www.linkedin.com/in/savannah-b-1504391bb/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="portfolio-btn" href="https://github.com/WEBBsava" target="_blank" rel="noopener">School GitHub</a>
+            </div>
+        </section>
+
+        <footer class="bg-brand-surface text-[#B0B0B0] text-center py-4 text-xs max-w-[850px] mx-auto rounded-b-md mb-6">
+            <p>&copy; 2026 Savannah B.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
