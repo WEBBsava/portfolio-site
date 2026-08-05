@@ -1,49 +1,14 @@
 @import "tailwindcss";
 @plugin "flowbite/plugin";
 
-html {
-  scroll-padding-top: 4rem;
-}
-
 @theme {
-  --color-brand-dark: #1E1E1E;
-  --color-brand-light: #c1e2be;
-  --color-brand-surface: #2D2D2D;
-  --color-brand-primary: #2E7D32;
-  --color-brand-highlight: #81C784;
+    --color-brand-dark: #1E1E1E;
+    --color-brand-light: #C1E2BE;
+    --color-brand-surface: #2D2D2D;
+    --color-brand-primary: #2E7D32;
+    --color-brand-highlight: #81C784;
 }
 
-@utility portfolio-section {
-  @apply p-6 max-w-[850px] mx-auto my-4 bg-brand-surface rounded-md shadow-md;
+html {
+    scroll-padding-top: 4rem;
 }
-
-@utility portfolio-card {
-  @apply bg-white/5 border border-white/15 border-l-4 border-l-brand-primary p-4 mb-4 rounded-md shadow-md hover:-translate-y-1 hover:bg-white/[0.08] transition duration-300;
-}
-
-@utility portfolio-btn {
-  @apply inline-flex items-center justify-center gap-1.5 px-4 py-2 text-sm font-semibold rounded-md bg-brand-primary text-white border-b-4 border-brand-primary hover:-translate-y-0.5 hover:bg-[#256a29] transition shadow-md;
-}
-
-/* FLOWBITE */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import "flowbite/src/themes/default";
-
-/* MINIMAL THEME
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import "flowbite/src/themes/minimal";
-*/
-
-/* ENTERPRISE THEME
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import "flowbite/src/themes/enterprise";
-*/
-
-/* PLAYFUL THEME
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
-@import "flowbite/src/themes/playful";
-*/
-
-/* MONO THEME
-@import "flowbite/src/themes/mono";
-*/
